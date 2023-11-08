@@ -1,0 +1,11 @@
+<%= form_with model: @movie do |form|%>
+    <div>
+    <%= form.label :title%>
+    <%= form.text_field :title %>
+    </div>
+
+    <div>
+        <%= form.label :director%>
+        <%= form.collection_select :person_id, @people.order(:name), :id, :name %>
+    </div>
+<% end %>

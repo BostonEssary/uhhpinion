@@ -1,0 +1,4 @@
+<% @movies.each do |movie|%>
+    <%= render partial: 'layouts/hero', :locals => {:title => 'Movies', :myclass => 'movies-hero', :subtext => "Everyone's favorite type of passtime"}%>
+    <%= movie.title %>
+<% end %>

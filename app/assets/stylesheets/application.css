@@ -1,0 +1,80 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ *{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ body {
+   margin: 0;
+ }
+
+ nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: lightskyblue;
+   padding: 5px;
+ }
+
+ nav li {
+   list-style: none;
+   
+
+ }
+
+ nav a {
+   text-decoration: none;
+   color: ghostwhite;
+ }
+
+ nav a:hover {
+   color: darkblue;
+ }
+
+ .nav-logo{
+   font-size:x-large;
+   height: fit-content;
+   font-weight: 800;
+ }
+
+ .nav-items{
+   display: flex;
+   justify-content: space-around;
+   width: 50%;
+ }
+
+ .hero{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .hero-text {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+
+ .movies-hero{
+   background-image: url('movie-hero-img.jpg');
+   background-position:center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 33vh;
+   color: ghostwhite;
+ }
